@@ -1,0 +1,46 @@
+body {
+    font-family: "Gill Sans";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(
+      90deg,
+      rgb(20, 15, 119) 0%,
+      rgb(118, 248, 230) 50%, 
+      rgb(70, 219, 249) 100%
+    );
+    color: rgb(20, 73, 63);
+    letter-spacing: 2px;
+}
+
+#score {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+/* Desain for Button */
+button {
+    font-family: "Gill Sans";
+    border-radius: 5px; /* Melandaikan sudut dari bg  */
+    border: none; /* ngilangin border */
+    padding: 1rem 3rem; /* yang pertama untuk panjang/tinggi bg sedangkan yang kedua untuk lebar bg*/
+    font-size: 1rem;
+    letter-spacing: 1px; /* jarak spasi antar huruf dan kata*/
+    cursor: pointer; /* mengubah cursor tanda panah menjadi tangan */
+}
+
+/* Make Columnn n rows */
+ul {
+    display: grid; 
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    border: 0.5px solid rgb(2, 0, 36);
+    border-radius: 10px;
+    cursor: pointer;
+}
